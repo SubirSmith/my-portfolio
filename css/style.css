@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap');
+
+
+
+@font-face {
+  font-family: 'impact';
+  src:  url('fonts/impact.eot') format('eot'),
+        url('fonts/impact.otf') format('otf'),
+        url('fonts/impact.ttf') format('ttf');
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+h1 span{
+	font-family: 'impact';
+}
+header{
+	background-image:url(..//images/banner.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 102vh;
+	position: relative;
+}
+header .row{
+	min-height: 102vh;
+}
+.navbar{
+	padding: 0;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: 0;
+    padding: 35px 15px;
+    position:relative;
+    transition-duration: 0.4s;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+	color:#fff;
+	background-color: #40afcc40;
+}
+
+.navbar-light .navbar-nav .nav-link::after{
+	content: "";
+	width:100%;
+	height: 0;
+	background-color: #40afcc;
+	position: absolute;
+	left:0;
+	bottom: 0;
+	transition-duration: 0.5s;
+
+}
+.navbar-light .navbar-nav .nav-link:hover::after{
+	height: 10px;
+}
+.banner-contant{
+	color:#fff;
+	text-align: center;
+}
+.banner-contant h2{
+	font-size: 65px;
+	color:#40afcc;
+	font-weight: 900;
+}
+.banner-contant h2 span{
+	font-weight: 100;
+	color:#fff;
+}
+.banner-contant p{
+	color:#f7f7f7;
+	font-size: 20px;
+	font-weight: 100;
+	max-width: 430;
+}
+.btn-custom,
+.btn-custom-reverse{
+    font-size: 18px;
+    color: #fff !important;
+    border-radius: 0;
+    padding: 15px 30px;
+    border: 2px solid #40afcc;
+    transition:all 0.3s;
+}
+.btn-custom{
+	background-color: #40afcc;
+    border-bottom-left-radius: 30px;
+}
+.btn-custom:hover{
+	background-color: transparent;
+
+}
+.btn-custom-reverse{
+	background-color: transparent;
+    border-bottom-right-radius: 30px;
+}
+.btn-custom-reverse:hover{
+	background-color: #40afcc;
+}
+
+.social-link{
+	position: absolute;
+	top:50%;
+	right:20px;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+
+
+}
+.social-link li{
+	margin-bottom: 10px;
+}
+.social-link li a{
+ color:#929292;
+ background-color:#f5f5f5;
+ border-radius: 50%;
+ width: 30px;
+ height: 30px;
+ display: block;
+ text-align: center;
+ line-height: 30px;
+}
+.social-link li a:hover{
+	background-color:#40afcc;
+}
+.social-link li span{
+	color:#fff;
+	font-size:20px;
+	transform:rotate(-90deg) translate(-50px,-32px);
+	-webkit-transform:rotate(-90deg) translate(-50px,-32px);
+	-moz-transform:rotate(-90deg) translate(-50px,-32px);
+	display: inline-block;
+}
+
+.about-section{
+	padding:100px 0;
+}
+
+.skills-section{
+    
+}
+.heading{
+    text-align: center;
+}
+.heading h1{
+    font-size: 71px;
+    color: #40afcc;
+    text-transform: uppercase;
+    font-weight: 900;
+    position: relative;
+    padding-bottom: 22px;
+}
+.heading span{
+    font-size: 90px;
+    color: #f7f7f7;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    z-index: -1;
+}
+
+h4{
+    font-size: 30px;
+    color: #40afcc;
+    font-weight: 700;
+    text-align: center;
+    margin: 40px 0 20px;
+}
+.hvr{
+    position: relative;
+}
+.hvr a{
+    position: absolute;
+   
+    left: 0;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    top: 70%;
+    transform: translateY(-70%);
+    font-weight: 700;
+    font-size: 20px;
+    z-index: 1;
+    transition:all 0.4s;
+	opacity: 0;
+}
+.hvr:hover a{
+	text-decoration:none;
+	opacity: 1;
+	top: 50%;
+    transform: translateY(-50%);
+}
+
+.hvr::after{
+	content: "";
+	background: #0b0f10e3;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	z-index: 0;
+	transform: scale(0.6);
+	transition:all 0.4s;
+	opacity: 0;
+}
+
+.hvr:hover::after{
+
+	transform: scale(1);
+	opacity: 1;
+
+}
+
+.resume-section{
+	padding: 100px 0;
+}
+
+h5{}
+
+.resume-box{}
+.resume-box::after{
+	content: "";
+}
+.resume-box:hover::after{}
+.resume-box::before{
+	content: "";
+}
+.resume-box:hover::before{}
+.resume-box .resume{}
+.resume-box:hover .resume{}
+.resume-box .resume span{}
+.resume-box:hover .resume span{}
+.resume-box .resume h3{}
+.resume-box:hover.resume h3{}
+.resume-box .resume h6{}
+.resume-box .resume p{}
